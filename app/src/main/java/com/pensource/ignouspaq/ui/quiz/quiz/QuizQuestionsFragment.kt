@@ -5,15 +5,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.pensource.ignouspaq.R
+import com.pensource.ignouspaq.databinding.FragmentQuizStartBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class QuizQuestionsFragment : Fragment() {
+
+    private lateinit var binding: FragmentQuizStartBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_quiz_questions, container, false)
+        binding = FragmentQuizStartBinding.inflate(inflater, container, false).apply {
+            lifecycleOwner = this@QuizQuestionsFragment
+        }
+        return binding.root
     }
 }
