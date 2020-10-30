@@ -2,4 +2,6 @@
 <resources>
     <dimen name="quiz_top_background_corner_radius">24dp</dimen>
     <dimen name="quiz_question_card_view_radius">12dp</dimen>
+    <dimen name="quiz_answer_background_stroke_width">4dp</dimen>
+    <dimen name="quiz_answer_background_corner_radius">8dp</dimen>
 </resources>

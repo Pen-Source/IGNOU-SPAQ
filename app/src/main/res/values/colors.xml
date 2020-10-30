@@ -3,4 +3,8 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="quiz_answer_background_background_color">#FFFFFF</color>
+    <color name="quiz_answer_background_correct_stroke_color">#00C853</color>
+    <color name="quiz_answer_background_wrong_stroke_color">#D50000</color>
+    <color name="quiz_answer_background_general_stroke_color">#F2F2F2</color>
 </resources>
