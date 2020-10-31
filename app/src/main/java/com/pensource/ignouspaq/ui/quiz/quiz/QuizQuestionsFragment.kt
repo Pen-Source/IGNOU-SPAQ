@@ -30,6 +30,10 @@ class QuizQuestionsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.submitButton.setOnClickListener {
+            viewModel.loadNextQuestion()
+        }
+
         viewModel.questionNumber.observe(viewLifecycleOwner, Observer { position ->
             viewModel.loadCurrentQuestion(position)
         })
