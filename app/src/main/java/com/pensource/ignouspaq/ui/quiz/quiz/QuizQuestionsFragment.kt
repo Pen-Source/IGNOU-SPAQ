@@ -22,4 +22,5 @@ class QuizQuestionsFragment : Fragment() {
         }
         return binding.root
     }
+
 }
