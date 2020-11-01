@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/root_layout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/general_background_green"
-    android:padding="16dp">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/answer_text"
-        android:layout_width="0dp"
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_marginRight="12dp"
-        android:layout_weight="1"
-        tools:text="This is my answer" />
+        android:background="@drawable/general_background_green"
+        android:padding="16dp">
 
-    <ImageView
-        android:id="@+id/indicator_image_view"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        app:srcCompat="@drawable/ic_baseline_circle_outline_24" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/answer_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            tools:text="This is my answer" />
+
+        <ImageView
+            android:id="@+id/indicator_image_view"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
+    </LinearLayout>
+</layout>

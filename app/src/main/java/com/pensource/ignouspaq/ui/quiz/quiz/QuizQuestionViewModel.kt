@@ -17,7 +17,7 @@ class QuizQuestionViewModel @ViewModelInject constructor() : ViewModel() {
     private val _currentQuestion = MutableLiveData<QuizQuestion>()
     val currentQuestion: LiveData<QuizQuestion> = _currentQuestion
 
-    private val _questionNumber = MutableLiveData<Int>()
+    private val _questionNumber = MutableLiveData<Int>(0)
     val questionNumber: LiveData<Int> = _questionNumber
 
     fun loadCurrentQuestion(position: Int) {
