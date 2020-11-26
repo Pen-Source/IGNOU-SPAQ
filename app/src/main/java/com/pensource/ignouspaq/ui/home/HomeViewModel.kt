@@ -5,4 +5,7 @@ import androidx.lifecycle.ViewModel
 
 class HomeViewModel @ViewModelInject constructor(
 
-) : ViewModel()
+) : ViewModel() {
+
+    val homeBannerUrl = ""
+}
